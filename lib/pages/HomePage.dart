@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tokoku_apps/widgets/HomeAppBar.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -6,6 +7,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: ListView(
         children: [
+          HomeAppBar(),
           
         ],
       ),
