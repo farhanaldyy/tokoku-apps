@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tokoku_apps/widgets/CategoriesWidget.dart';
 import 'package:tokoku_apps/widgets/HomeAppBar.dart';
 
 class HomePage extends StatelessWidget {
@@ -53,6 +54,28 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                 ),
+
+                // Categories
+                Container(
+                  alignment: Alignment.centerLeft,
+                  margin: EdgeInsets.symmetric(
+                    vertical: 20,
+                    horizontal: 10,
+                  ),
+                  child: Text(
+                    "Categories",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF4C53A5),
+                    ),                  
+                  ),
+                ),
+
+              // Categories Widget
+              CategoriesWidget(),
+
+
               ],
             ),
           ),
