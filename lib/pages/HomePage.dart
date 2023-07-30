@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tokoku_apps/widgets/CategoriesWidget.dart';
 import 'package:tokoku_apps/widgets/HomeAppBar.dart';
+import 'package:tokoku_apps/widgets/ItemsWidget.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -11,7 +12,7 @@ class HomePage extends StatelessWidget {
           HomeAppBar(),
           Container(
             // temporary height
-            height: 500,
+            // height: 500,
             padding: EdgeInsets.only(top: 15),
             decoration: BoxDecoration(
               color: Color(0xFFEDECF2),
@@ -75,6 +76,22 @@ class HomePage extends StatelessWidget {
               // Categories Widget
               CategoriesWidget(),
 
+              // Items
+              Container(
+                alignment: Alignment.centerLeft,
+                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                child: Text(
+                  "Best Selling",
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF4C53A5),
+                  ),
+                ),
+              ),
+
+              // Items Widget
+              ItemsWidget(),
 
               ],
             ),
