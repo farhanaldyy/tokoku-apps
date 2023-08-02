@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
                       Icon(
                         Icons.camera_alt,
                         size: 25,
-                        color: Color(0xFF4C53A5),
+                        color: Color.fromARGB(255, 39, 70, 193),
                       )
                     ],
                   ),
@@ -70,7 +70,7 @@ class HomePage extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF4C53A5),
+                      color: Colors.black,
                     ),                  
                   ),
                 ),
@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF4C53A5),
+                    color: Colors.black,
                   ),
                 ),
               ),
@@ -104,7 +104,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         onTap: (index) {},
         height: 60,
-        color: Color(0xFF4C53A5),
+        color: Color.fromARGB(255, 39, 70, 193),
         items: [
           Icon(
             Icons.home,
@@ -117,8 +117,8 @@ class HomePage extends StatelessWidget {
             color: Colors.white,
           ),
           Icon(
-            CupertinoIcons.list_dash,
-            size: 25,
+            CupertinoIcons.profile_circled,
+            size: 27,
             color: Colors.white,
           ),
         ],

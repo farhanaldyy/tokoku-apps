@@ -25,11 +25,11 @@ class CategoriesWidget extends StatelessWidget {
                   height: 40,
                 ),
                 Text(
-                  "Sandal",
+                  "Category",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    color: Color(0xFF4C53A5),
+                    fontSize: 15,
+                    color: Colors.black87,
                   ),
                 )
               ],
