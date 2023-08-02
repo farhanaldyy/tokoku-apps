@@ -1,11 +1,23 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+// import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:tokoku_apps/pages/ProfilePage.dart';
 import 'package:tokoku_apps/widgets/CategoriesWidget.dart';
 import 'package:tokoku_apps/widgets/HomeAppBar.dart';
 import 'package:tokoku_apps/widgets/ItemsWidget.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  List pages = [
+    ProfilePage(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +37,6 @@ class HomePage extends StatelessWidget {
             ),
             child: Column(
               children: [
-
                 // Search Widget
                 Container(
                   margin: EdgeInsets.symmetric(horizontal: 15),
@@ -71,55 +82,31 @@ class HomePage extends StatelessWidget {
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
-                    ),                  
+                    ),
                   ),
                 ),
 
-              // Categories Widget
-              CategoriesWidget(),
+                // Categories Widget
+                CategoriesWidget(),
 
-              // Items
-              Container(
-                alignment: Alignment.centerLeft,
-                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-                child: Text(
-                  "Best Selling",
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                // Items
+                Container(
+                  alignment: Alignment.centerLeft,
+                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                  child: Text(
+                    "Best Selling",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
-              ),
 
-              // Items Widget
-              ItemsWidget(),
-
+                // Items Widget
+                ItemsWidget(),
               ],
             ),
-          ),
-        ],
-      ),
-      bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: Colors.transparent,
-        onTap: (index) {},
-        height: 60,
-        color: Color.fromARGB(255, 39, 70, 193),
-        items: [
-          Icon(
-            Icons.home,
-            size: 25,
-            color: Colors.white,
-          ),
-          Icon(
-            CupertinoIcons.cart_fill,
-            size: 25,
-            color: Colors.white,
-          ),
-          Icon(
-            CupertinoIcons.profile_circled,
-            size: 27,
-            color: Colors.white,
           ),
         ],
       ),
