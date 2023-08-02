@@ -49,7 +49,7 @@ class _MainPageState extends State<MainPage> {
             label: 'Cart',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
+            icon: Icon(Icons.person),
             label: 'Settings',
           ),
         ],
