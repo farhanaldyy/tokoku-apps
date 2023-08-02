@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tokoku_apps/pages/CartPage.dart';
 import 'package:tokoku_apps/pages/HomePage.dart';
 
 void main() => runApp(MyApp());
@@ -11,7 +12,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      routes: {"/": (context) => HomePage()},
+      routes: {
+          "/": (context) => HomePage(),
+          "cartPage": (context) => CartPage(),
+        },
     );
   }
 }

@@ -26,7 +26,7 @@ class ItemsWidget extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.all(5),
                       decoration: BoxDecoration(
-                        color: Color(0xFF4C53A5),
+                        color: Color.fromARGB(255, 243, 219, 80),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Text(
@@ -34,7 +34,7 @@ class ItemsWidget extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                          color: Colors.black,
                         ),
                       ),
                     ),
@@ -59,10 +59,10 @@ class ItemsWidget extends StatelessWidget {
                   padding: EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Product Tittle",
+                    "Nama Product",
                     style: TextStyle(
                       fontSize: 16,
-                      color: Color(0xFF4C53A5),
+                      color: Colors.black,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -70,10 +70,10 @@ class ItemsWidget extends StatelessWidget {
                 Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Write description of product",
+                    "Deskripsi Product",
                     style: TextStyle(
                       fontSize: 12,
-                      color: Color(0xFF4C53A5),
+                      color: Colors.grey,
                     ),
                   ),
                 ),
@@ -87,12 +87,12 @@ class ItemsWidget extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xFF4C53A5),
+                          color: Colors.blue,
                         ),
                       ),
                       Icon(
                         Icons.shopping_cart_checkout,
-                        color: Color(0xFF4C53A5),
+                        color: Colors.blue,
                       ),
                     ],
                   ),
